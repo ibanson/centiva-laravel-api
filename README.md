@@ -29,7 +29,7 @@ Elle implémente un système simple de gestion des **équipes** et **courtiers**
 
 ---
 
-## 📦 Installation & exécution locale
+## Installation & exécution locale
 
 ### 1. Cloner le projet
 ```bash
@@ -76,7 +76,7 @@ http://127.0.0.1:8000/api
 
 ---
 
-## 📡 Endpoints API disponibles
+## Endpoints API disponibles
 
 ### 🟦 **Équipes (Teams)**
 
