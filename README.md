@@ -106,7 +106,7 @@ http://127.0.0.1:8000/api
 
 ---
 
-## 🏗 Structure du projet
+## Structure du projet
 
 ```
 app/
@@ -125,7 +125,7 @@ routes/
 
 ---
 
-## 🧪 Données de démonstration
+## Données de démonstration
 
 Le seeder fournit automatiquement :
 - plusieurs **équipes**
@@ -134,7 +134,7 @@ Le seeder fournit automatiquement :
 
 ---
 
-## ✔ Conformité avec les exigences du test Centiva
+## Conformité avec les exigences du test
 
 - [x] 4 endpoints GET
 - [x] 1 endpoint POST
