@@ -22,35 +22,21 @@ class StoreBrokerRequest extends FormRequest
      */
     public function rules(): array
     {
-       // if ($this->isMethod('post')) {
-            return [
-                'name'    => ['required', 'string', 'max:255'],
-                'email'   => [
-                    'required',
-                    'email',
-                    'max:255',
-                    'unique:brokers,email'
-                ],
-            ];
-      //  }
-
-        // UPDATE (PUT/PATCH)
-/*         return [
-            'team_id' => ['required', 'exists:teams,id'],
+        return [
             'name'    => ['required', 'string', 'max:255'],
             'email'   => [
                 'required',
                 'email',
                 'max:255',
-                Rule::unique('brokers', 'email')->ignore($this->broker)
-            ]
-        ]; */
+                'unique:brokers,email'
+            ],
+        ];
     }
 
     public function messages(): array
     {
         return [
-           
+
             'name.required' => 'The broker name is required.',
             'name.string'   => 'The broker name must be a valid string.',
             'name.max'      => 'The broker name may not exceed 255 characters.',

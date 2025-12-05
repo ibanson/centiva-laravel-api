@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
     {
          // Équipe #1 - Montréal
         $team1 = Team::create([
-            'name'  => 'Équipe Montréal'
+            'name'  => 'Équipe de Montréal'
         ]);
 
         $team1->brokers()->createMany([
@@ -33,7 +33,7 @@ class DatabaseSeeder extends Seeder
 
         // Èquipe #2 - Québec
         $team2 = Team::create([
-            'name'  => 'Équipe Québec'
+            'name'  => 'Équipe de Québec'
         ]);
 
         $team2->brokers()->createMany([

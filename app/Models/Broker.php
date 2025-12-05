@@ -9,7 +9,7 @@ class Broker extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['name', 'email', 'team_id'];
+    protected $fillable = ['name', 'email'];
 
     public function team()
     {
