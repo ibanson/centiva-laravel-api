@@ -12,6 +12,7 @@ class TeamResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'name'      => $this->name,
             'brokers'   => BrokerResource::collection($this->whenLoaded('brokers')),
         ];

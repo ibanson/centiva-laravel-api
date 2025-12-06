@@ -7,6 +7,22 @@ Elle implémente un système simple de gestion des **équipes** et **courtiers**
 
 ---
 
+## Pourquoi je n'ai pas retenu Docker pour ce projet
+
+Bien que Docker ait été évoqué lors de l’entrevue, il a été volontairement exclu de ce livrable.
+En contexte de test technique, la priorité est de fournir un environnement :
+
+- simple à cloner ;
+- rapide à exécuter ;
+- sans dépendances lourdes ;
+- sans risque d’erreurs liées aux scripts d’automatisation.
+
+Un setup Docker aurait nécessité un dépôt supplémentaire, un Dockerfile, un script d’installation automatisée (setup.sh), ainsi que la gestion de plusieurs clones Git, ce qui augmente la complexité et peut nuire à l’expérience d’évaluation.
+
+Le choix délibéré a donc été de proposer un frontend Nuxt 3 et un backend Laravel totalement autonomes, faciles à démarrer et transparents à tester.
+
+---
+
 ## Fonctionnalités principales
 
 ### ✔ Gestion des équipes (Teams)
