@@ -47,10 +47,27 @@ Le choix délibéré a donc été de proposer un frontend Nuxt 3 et un backend L
 
 ## Installation & exécution locale
 
+Pour ce test technique, j’ai choisi d’organiser mon environnement de travail en deux répertoires distincts:
+
+```
+backend/
+frontend/
+```
+
+Le dossier backend/ contient l’API Laravel.
+Le dossier frontend/ contient l’application Nuxt 3 (SSR) qui consomme l'API Laravel.
+
+### Suggestion de mise en place locale
+
+```bash
+# Créer une structure de base
+mkdir backend frontend
+```
+
 ### 1. Cloner le projet
 ```bash
-git clone https://github.com/ibanson/centiva-laravel-api.git
-cd centiva-laravel-api
+cd backend
+git clone https://github.com/ibanson/centiva-laravel-api.git .
 ```
 
 ### 2. Installer les dépendances backend
@@ -126,20 +143,25 @@ http://127.0.0.1:8000/api
 
 ```
 app/
- ├── Http/
- │    ├── Controllers/Api/
- │    ├── Requests/Api/
- │    └── Resources/Api/
- ├── Models/
-database/
- ├── migrations/
- ├── seeders/
- └── database.sqlite (non versionné)
-routes/
- └── api.php
+├─ Http/
+│   ├─ Controllers/
+│   │   └─ Api/
+│   │       ├─ BrokerController.php
+│   │       └─ TeamController.php
+│   │
+│   ├─ Requests/
+│   │   └─ Api/
+│   │       └─ StoreBrokerRequest.php
+│   │
+│   └─ Resources/
+│       └─ Api/
+│           ├─ BrokerResource.php
+│           └─ TeamResource.php
+│
+├─ Models/
+│   ├─ Broker.php
+│   └─ Team.php
 ```
-
----
 
 ## Données de démonstration
 
@@ -156,7 +178,6 @@ Le seeder fournit automatiquement :
 - [x] 1 endpoint POST
 - [x] 1 endpoint DELETE (soft-delete + cascade)
 - [x] Modèles + migrations
-- [x] Soft Deletes
 - [x] Relations Team/Broker
 - [x] Validation des données
 - [x] JSON Resources
