@@ -6,11 +6,14 @@ paths:
   - "phpunit.xml"
   - "database/migrations/**"
 ---
+<!-- dev-standards-sha256: ce15450648b2391eb9266c566531a843775974f79c566911d6a4fb602c203c8b -->
 
 <!-- FICHIER DEPLOYE DEPUIS dev-standards/rules/laravel-tests-guard.md.
-     NE PAS EDITER ICI : la prochaine execution de bin/rules-deploy ecrasera.
-     Une correction se fait dans dev-standards, puis se redeploie partout.
-     Ce qui est propre a CE projet va dans une rule voisine, pas ici. -->
+     DO NOT EDIT THIS COPY: bin/rules-deploy refuses a copy edited in place.
+     Make changes in the dev-standards source, then redeploy. --force replaces
+     a refused copy after backing it up to .orig (or .orig.N); it never
+     writes through a symbolic link.
+     Anything specific to THIS project belongs in a neighbouring rule, not here. -->
 
 # Garde-fous des tests Laravel, NE JAMAIS AFFAIBLIR
 
